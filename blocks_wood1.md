@@ -24,5 +24,5 @@ hai.trainingStart(function () {
 
 ```
 ```package
-hai2025-ts=github:aralexwork-arch/hebrew
+hebrew=github:aralexwork-arch/hebrew
 ```
