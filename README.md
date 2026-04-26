@@ -1,1 +1,1 @@
-# Hebrew translation tutorial for Hour of AI: First Night
+# Hebrew Hour of AI tutorial - First Night

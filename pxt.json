@@ -1,22 +1,25 @@
 {
-    "name": "minecraft-hai-he2",
-    "version": "0.1.0",
+    "name": "minecraft-hai-he3",
+    "version": "0.2.0",
     "files": [
         "main.blocks",
         "main.ts",
         "README.md",
+        "custom.ts",
+        "custom.jres",
         "blocks_wood1.md",
-        "_locales/he/hai2025-ts-strings.json",
-        "_locales/he/hai2025-ts-jsdoc-strings.json",
-        "_locales/he-IL/hai2025-ts-strings.json",
-        "_locales/he-IL/hai2025-ts-jsdoc-strings.json"
+        "_locales/he/blocks_wood1.md",
+        "_locales/he/minecraft-hai-he3-strings.json",
+        "_locales/he/minecraft-hai-he3-jsdoc-strings.json",
+        "_locales/he-IL/blocks_wood1.md",
+        "_locales/he-IL/minecraft-hai-he3-strings.json",
+        "_locales/he-IL/minecraft-hai-he3-jsdoc-strings.json"
     ],
     "testFiles": [],
     "supportedTargets": ["minecraft"],
     "preferredEditor": "blocksprj",
     "dependencies": {
         "core": "*",
-        "builder": "*",
-        "hai2025-ts": "github:ReWrite-Media/hai2025-ts"
+        "builder": "*"
     }
 }
