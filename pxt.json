@@ -1,6 +1,6 @@
 {
     "name": "minecraft-hai-he",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Hebrew localization for hai2025-ts (Hour of AI)",
     "dependencies": {
         "core": "*",

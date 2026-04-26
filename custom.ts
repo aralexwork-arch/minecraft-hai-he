@@ -18,7 +18,7 @@ namespace haiInputs {
     //% n.shadow="ghostBlock"
     //% color="#0096FF"
     export function craftWith(n: number): void {
-        player.execute(`scoreboard players set .output${n} global 1`);
+        player.execute(`scoreboard players add .outputsum global ${n}`);
     }
 
 }
@@ -105,7 +105,7 @@ namespace ai {
                     }
 
                     // This line will now only run if the value is valid.
-                    player.execute(`scoreboard players set .output${items[value]} global 1`);
+                    player.execute(`scoreboard players add .outputsum global ${items[value]}`);
                 }
 
             } else if (api_endpoint == "crafting") {
@@ -127,7 +127,7 @@ namespace ai {
                     }
 
                     // This line will now only run if the value is valid.
-                    player.execute(`scoreboard players set .output${crafting_recipes[value]} global 1`);
+                    player.execute(`scoreboard players add .outputsum global ${crafting_recipes[value]}`);
                 }
             } else if (api_endpoint == "upgrade") {
                 const keys = Object.keys(data);
@@ -145,7 +145,7 @@ namespace ai {
                     }
 
                     // This line will now only run if the value is valid.
-                    player.execute(`scoreboard players set .output${items[value]} global 1`);
+                    player.execute(`scoreboard players add .outputsum global ${items[value]}`);
                 }
             }
         }
@@ -177,7 +177,7 @@ namespace hai {
     //% n.shadow="ghostBlock"
     //% color="#0096FF"
     export function craftWith(n: number): void {
-        player.execute(`scoreboard players set .output${n} global 1`);
+        player.execute(`scoreboard players add .outputsum global ${n}`);
     }
 
     /**
@@ -202,7 +202,7 @@ namespace hai {
             normalizedPattern === `...\n.##\n.##`      // Bottom-right 2x2 in a 3x3
         ) {
             // Crafted crafting bench
-            player.execute(`scoreboard players set .output4 global 1`);
+            player.execute(`scoreboard players add .outputsum global 4`);
         } else if (
             normalizedPattern === `#.\n#.` || normalizedPattern === `.#\n.#` || // Stick patterns for 2x2
             normalizedPattern === `#..\n#..\n...` || normalizedPattern === `.#.\n.#.\n...` ||
@@ -210,34 +210,34 @@ namespace hai {
             normalizedPattern === `...\n.#.\n.#.` || normalizedPattern === `...\n..#\n..#`
         ) {
             // Crafted stick or torch
-            player.execute(`scoreboard players set .output5 global 1`);
+            player.execute(`scoreboard players add .outputsum global 5`);
         } else if (normalizedPattern === `###\n.#.\n.#.`) {
             // Crafted pickaxe
-            player.execute(`scoreboard players set .output6 global 1`);
+            player.execute(`scoreboard players add .outputsum global 6`);
         } else if (normalizedPattern === `##.\n##.\n.#.` || normalizedPattern === `.##\n.##\n.#.`) {
             // Crafted axe
-            player.execute(`scoreboard players set .output7 global 1`);
+            player.execute(`scoreboard players add .outputsum global 7`);
         } else if (
             normalizedPattern === `.#.\n.#.\n.#.` || normalizedPattern === `#..\n#..\n#..` ||
             normalizedPattern === `..#\n..#\n..#`
         ) {
             // Crafted shovel
-            player.execute(`scoreboard players set .output8 global 1`);
+            player.execute(`scoreboard players add .outputsum global 8`);
         } else if (
             normalizedPattern === `##.\n##.\n##.` || normalizedPattern === `.##\n.##\n.##`
         ) {
             // Crafted door
-            player.execute(`scoreboard players set .output9 global 1`);
+            player.execute(`scoreboard players add .outputsum global 9`);
         } else if (
             normalizedPattern === `###\n#.#\n###`
         ) {
             // Crafted furnace
-            player.execute(`scoreboard players set .output10 global 1`);
+            player.execute(`scoreboard players add .outputsum global 10`);
         } else if (
             normalizedPattern === `...\n###\n###` || normalizedPattern === `###\n###\n...`
         ) {
             // Crafted bed
-            player.execute(`scoreboard players set .output11 global 1`);
+            player.execute(`scoreboard players add .outputsum global 11`);
         } else if (
             // Shears Patterns
             // 2x2 Grid
@@ -257,7 +257,7 @@ namespace hai {
             normalizedPattern === `...\n..#\n.#.`
         ) {
             // Crafted shears
-            player.execute(`scoreboard players set .output12 global 1`);
+            player.execute(`scoreboard players add .outputsum global 12`);
         } else if (
             normalizedPattern === `#..\n...\n...` ||
             normalizedPattern === `.#.\n...\n...` ||
@@ -274,10 +274,10 @@ namespace hai {
             normalizedPattern === `..\n#.`
         ) {
             // Crafted plank
-            player.execute(`scoreboard players set .output13 global 1`);
+            player.execute(`scoreboard players add .outputsum global 13`);
         } else {
             // Pattern did not match any recipe
-            player.execute(`scoreboard players set .output0 global 1`);
+            player.execute(`scoreboard players add .outputsum global 0`);
         }
     }
 
@@ -288,7 +288,7 @@ namespace hai {
     //% n.shadow="ghostBlock"
     //% color="#0096FF"
     export function classifyWood(n: number): void {
-        player.execute(`scoreboard players set .output${n} global 1`);
+        player.execute(`scoreboard players add .outputsum global ${n}`);
     }
 
     /**
@@ -299,7 +299,7 @@ namespace hai {
     //% m.shadow="ghostBlock"
     //% color="#0096FF"   
     export function upgradeTool(t: number, m: number): void {
-        player.execute(`scoreboard players set .output${t} global ${m}`);
+        player.execute(`scoreboard players add .outputsum global ${m}`);
     }
 
     /**
@@ -309,7 +309,7 @@ namespace hai {
     //% b.shadow="ghostBlock"
     //% color="#0096FF"   
     export function buildingMaterials(b: number): void {
-        player.execute(`scoreboard players set .output${b} global 1`);
+        player.execute(`scoreboard players add .outputsum global ${b}`);
     }
 
     /**
@@ -319,7 +319,7 @@ namespace hai {
     //% b.shadow="ghostBlock"
     //% color="#0096FF"   
     export function classifyOre(b: number): void {
-        player.execute(`scoreboard players set .output${b} global 1`);
+        player.execute(`scoreboard players add .outputsum global ${b}`);
     }
 
     //VALUES
