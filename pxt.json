@@ -1,7 +1,7 @@
 {
-    "name": "hai2025-he",
+    "name": "hai2025-ts",
     "version": "0.0.111",
-    "description": "Hebrew localization of hai2025-ts (Hour of AI)",
+    "description": "Hebrew localization fork of hai2025-ts (Hour of AI)",
     "dependencies": {
         "core": "*",
         "builder": "*"
@@ -13,7 +13,11 @@
         "tutorial-info-cache.json",
         "blocks_wood1.md",
         "_locales/he/blocks_wood1.md",
-        "_locales/he-IL/blocks_wood1.md"
+        "_locales/he/hai2025-ts-strings.json",
+        "_locales/he/hai2025-ts-jsdoc-strings.json",
+        "_locales/he-IL/blocks_wood1.md",
+        "_locales/he-IL/hai2025-ts-strings.json",
+        "_locales/he-IL/hai2025-ts-jsdoc-strings.json"
     ],
     "testFiles": [],
     "public": true,

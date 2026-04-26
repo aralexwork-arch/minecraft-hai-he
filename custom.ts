@@ -15,8 +15,6 @@ namespace haiInputs {
      * This function takes
      */
     //% block="craft with %n"
-    //% block.loc.he="צור עם %n"
-    //% block.loc.he-IL="צור עם %n"
     //% n.shadow="ghostBlock"
     //% color="#0096FF"
     export function craftWith(n: number): void {
@@ -163,8 +161,6 @@ namespace hai {
      * Training Module
      */
     //% block="training module"
-    //% block.loc.he="מודול אימון"
-    //% block.loc.he-IL="מודול אימון"
     //% color="#0096FF"
     //% blockId=on_training_start 
     export function trainingStart(handler:() => void) {
@@ -178,8 +174,6 @@ namespace hai {
      * Select block to craft with.
      */
     //% block="craft with %n"
-    //% block.loc.he="צור עם %n"
-    //% block.loc.he-IL="צור עם %n"
     //% n.shadow="ghostBlock"
     //% color="#0096FF"
     export function craftWith(n: number): void {
@@ -190,8 +184,6 @@ namespace hai {
      * Train agent crafting.
      */
     //% block="crafting grid %pattern"
-    //% block.loc.he="רשת יצירה %pattern"
-    //% block.loc.he-IL="רשת יצירה %pattern"
     //% blockid="craft"
     //% color="#0096FF"
     export function crafting(pattern: CraftPattern): void {
@@ -293,8 +285,6 @@ namespace hai {
      * Classify a wood log.
      */
     //% block="classify %n as wood"
-    //% block.loc.he="סווג %n כעץ"
-    //% block.loc.he-IL="סווג %n כעץ"
     //% n.shadow="ghostBlock"
     //% color="#0096FF"
     export function classifyWood(n: number): void {
@@ -305,8 +295,6 @@ namespace hai {
     * Upgrade tools material.
     */
     //% block="upgrade %t to %m"
-    //% block.loc.he="שדרג %t ל-%m"
-    //% block.loc.he-IL="שדרג %t ל-%m"
     //% t.shadow="ghostItem"
     //% m.shadow="ghostBlock"
     //% color="#0096FF"   
@@ -318,8 +306,6 @@ namespace hai {
     * House Materials
     */
     //% block="building material %b"
-    //% block.loc.he="חומר בנייה %b"
-    //% block.loc.he-IL="חומר בנייה %b"
     //% b.shadow="ghostBlock"
     //% color="#0096FF"   
     export function buildingMaterials(b: number): void {
@@ -330,8 +316,6 @@ namespace hai {
     * Classify as ore
     */
     //% block="classify %b as ore"
-    //% block.loc.he="סווג %b כעפרה"
-    //% block.loc.he-IL="סווג %b כעפרה"
     //% b.shadow="ghostBlock"
     //% color="#0096FF"   
     export function classifyOre(b: number): void {
@@ -347,8 +331,6 @@ namespace hai {
      * Select Wood
      */
     //% block="`custom.PlanksOak` wood"
-    //% block.loc.he="`custom.PlanksOak` עץ"
-    //% block.loc.he-IL="`custom.PlanksOak` עץ"
     export function wood(): number {
         return 1;
     }
@@ -357,8 +339,6 @@ namespace hai {
      * Select Cobblestone
      */
     //% block="`custom.Cobblestone` cobblestone"
-    //% block.loc.he="`custom.Cobblestone` אבן מסותתת"
-    //% block.loc.he-IL="`custom.Cobblestone` אבן מסותתת"
     export function cobblestone(): number {
         return 3;
     }
@@ -367,8 +347,6 @@ namespace hai {
      * Select Oak Log
      */
     //% block="`custom.logOak` oak log"
-    //% block.loc.he="`custom.logOak` גזע אלון"
-    //% block.loc.he-IL="`custom.logOak` גזע אלון"
     //% blockId=oaklog
     export function logOak(): number {
         return 1;
@@ -378,8 +356,6 @@ namespace hai {
      * Select Birch Log
      */
     //% block="`custom.logBirch` birch log"
-    //% block.loc.he="`custom.logBirch` גזע ליבנה"
-    //% block.loc.he-IL="`custom.logBirch` גזע ליבנה"
     //% blockId=birchlog
     export function logBirch(): number {
         return 2;
@@ -389,8 +365,6 @@ namespace hai {
      * Select Acacia Log
      */
     //% block="`custom.logAcacia` acacia log"
-    //% block.loc.he="`custom.logAcacia` גזע שיטה"
-    //% block.loc.he-IL="`custom.logAcacia` גזע שיטה"
     //% blockId=acacialog
     export function logAcacia(): number {
         return 3;
@@ -400,8 +374,6 @@ namespace hai {
      * Select Coal Ore
      */
     //% block="`custom.CoalOre` coal ore"
-    //% block.loc.he="`custom.CoalOre` עפרת פחם"
-    //% block.loc.he-IL="`custom.CoalOre` עפרת פחם"
     //% blockId=coalore
     export function coalOre(): number {
         return 4;
@@ -411,8 +383,6 @@ namespace hai {
      * Select Iron Ore
      */
     //% block="`custom.IronOre` iron ore"
-    //% block.loc.he="`custom.IronOre` עפרת ברזל"
-    //% block.loc.he-IL="`custom.IronOre` עפרת ברזל"
     //% blockId=ironore
     export function ironOre(): number {
         return 5;
@@ -422,8 +392,6 @@ namespace hai {
      * Select Wool
      */
     //% block="`custom.Wool` wool"
-    //% block.loc.he="`custom.Wool` צמר"
-    //% block.loc.he-IL="`custom.Wool` צמר"
     //% blockId=wool
     export function wool(): number {
         return 6;
@@ -433,8 +401,6 @@ namespace hai {
      * Select Grass
      */
     //% block="`custom.Grass` grass"
-    //% block.loc.he="`custom.Grass` דשא"
-    //% block.loc.he-IL="`custom.Grass` דשא"
     //% blockId=grass
     export function grass(): number {
         return 0;
@@ -444,8 +410,6 @@ namespace hai {
      * Select Lava
      */
     //% block="`custom.Lava` lava"
-    //% block.loc.he="`custom.Lava` לבה"
-    //% block.loc.he-IL="`custom.Lava` לבה"
     //% blockId=lava
     export function lava(): number {
         return 0;
@@ -455,8 +419,6 @@ namespace hai {
      * Select Soul Sand
      */
     //% block="`custom.SoulSand` soul sand"
-    //% block.loc.he="`custom.SoulSand` חול נשמות"
-    //% block.loc.he-IL="`custom.SoulSand` חול נשמות"
     //% blockId=soul_sand
     export function soulSand(): number {
         return 0;
@@ -466,8 +428,6 @@ namespace hai {
      * Ghost Block
      */
     //% block="`custom.Ghost`"
-    //% block.loc.he="`custom.Ghost`"
-    //% block.loc.he-IL="`custom.Ghost`"
     //% color="#8E8E8E"
     //% blockId=ghostBlock
     export function ghostBlock(): number {
@@ -480,8 +440,6 @@ namespace hai {
      * Coal
      */
     //% block="`custom.Coal` coal"
-    //% block.loc.he="`custom.Coal` פחם"
-    //% block.loc.he-IL="`custom.Coal` פחם"
     //% blockId=coal
     export function coal(): number {
         return 21;
@@ -491,8 +449,6 @@ namespace hai {
      * Iron Ingot
      */
     //% block="`custom.IronIngot` iron ingot"
-    //% block.loc.he="`custom.IronIngot` מטיל ברזל"
-    //% block.loc.he-IL="`custom.IronIngot` מטיל ברזל"
     //% blockId=ironIngot
     export function ironIngot(): number {
         return 22;
@@ -504,8 +460,6 @@ namespace hai {
      * Select Stick
      */
     //% block="`custom.Stick` stick"
-    //% block.loc.he="`custom.Stick` מקל"
-    //% block.loc.he-IL="`custom.Stick` מקל"
     export function stick(): number {
         return 2;
     }
@@ -514,8 +468,6 @@ namespace hai {
      * Select Pickaxe
      */
     //% block="`custom.WoodenPickaxe` pickaxe"
-    //% block.loc.he="`custom.WoodenPickaxe` מכוש"
-    //% block.loc.he-IL="`custom.WoodenPickaxe` מכוש"
     //% blockId=pickaxe
     export function pickaxe(): number {
         return 1;
@@ -525,8 +477,6 @@ namespace hai {
      * Select Axe
      */
     //% block="`custom.WoodenAxe` axe"
-    //% block.loc.he="`custom.WoodenAxe` גרזן"
-    //% block.loc.he-IL="`custom.WoodenAxe` גרזן"
     //% blockId=axe
     export function axe(): number {
         return 2;
@@ -536,8 +486,6 @@ namespace hai {
      * Select Pickaxe
      */
     //% block="`custom.WoodenShovel` shovel"
-    //% block.loc.he="`custom.WoodenShovel` את"
-    //% block.loc.he-IL="`custom.WoodenShovel` את"
     //% blockId=shovel
     export function shovel(): number {
         return 3;
@@ -547,8 +495,6 @@ namespace hai {
      * Ghost Item
      */
     //% block="`custom.GhostItem`"
-    //% block.loc.he="`custom.GhostItem`"
-    //% block.loc.he-IL="`custom.GhostItem`"
     //% color="#8E8E8E"
     //% blockId=ghostItem
     export function ghostItem(): number {
